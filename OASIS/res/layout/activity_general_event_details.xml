@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bits.dvm.oasis.GeneralEventDetails" >
+
+    <WebView
+        android:id="@+id/webView1"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2" />
+
+    <Button
+        android:id="@+id/button1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"  
+        android:onClick="addToReminder"
+        android:textColor="@color/white"
+        android:background="@color/background_light_blue"
+        android:text="@string/cal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="markFavourite"
+        android:textColor="@color/white"
+        android:background="@color/background_light_blue"
+        android:text="@string/favourite" />
+
+</RelativeLayout>

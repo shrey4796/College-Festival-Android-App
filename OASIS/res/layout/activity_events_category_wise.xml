@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light_blue"
+    android:weightSum="1.74" 
+    tools:context="bits.dvm.oasis.EventsCategoryWise"
+    tools:ignore="NestedWeights" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/image_error"
+        android:src="@drawable/top" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="1.5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:background="@drawable/music"
+            android:onClick="musicButtonClick"
+            android:text=""
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="artButtonClick"
+            android:layout_weight="0.55"
+            android:background="@drawable/art"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:onClick="danceButtonClick"
+            android:background="@drawable/dance"
+            android:text="" />
+
+    </LinearLayout>
+
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="1.5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:onClick="oratoryButtonClick"
+            android:background="@drawable/oratory"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:background="@drawable/event"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:onClick="dramaButtonClick"
+            android:background="@drawable/drama"
+            android:text="" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="1.5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button7"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:onClick="miscButtonClick"
+            android:background="@drawable/misc"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:onClick="quizzingButtonClick"
+            android:background="@drawable/quizzing"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button9"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.475"
+            android:onClick="onlineButtonClick"
+            android:background="@drawable/online"
+            android:text="" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/image_error"
+        android:src="@drawable/bottom" />
+    
+</LinearLayout>
